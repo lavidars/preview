@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html, body, #template-html-root {
+  height: 100%;
+}
+#template-content-container {
+  padding-bottom: 110px;
+}
+.t-body {
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  position: relative;
+}
+.t-body .t-header {
+  position: relative;
+}
+
+.t-body .t-header .t-banner-image {
+  z-index: -1;
+}
+
+.t-body .t-header .t-banner-image img {
+  object-fit: cover;
+  width: 100%;
+}
+.t-body .t-banner-content {
+	position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-body .t-header .t-top-bar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+.t-body .t-header .t-top-menu {
+  padding-top: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.t-body .t-header .t-top-menu .t-menu {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.t-body .t-header .t-top-menu .t-menu ul li {
+  list-style-type: none;
+}
+.t-body .t-header .t-top-menu .t-menu ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.t-body .t-header .t-top-menu .t-menu ul li i {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+.t-body .t-header .t-top-menu .t-menu ul li:hover > i {
+  color: #1EC5FD;
+}
+.t-body .t-header .t-top-menu .t-menu ul li:hover > a {
+  color: #1EC5FD;
+}
+
+.t-body[data-theme=orange] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-top-menu .t-menu ul li:hover > i {
+  color: #3d55a7;
+}
+
+.t-body[data-theme=orange] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-top-menu .t-menu ul li:hover > a {
+  color: #3d55a7;
+}
+
+.t-body .t-header .t-top-menu .t-menu li i {
+  margin-right: 5px;
+}
+
+.t-body .t-header .t-top-menu .t-menu > ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.t-body .t-header .t-top-menu .t-menu > ul > li {
+  display: block;
+  padding-right: 10px;
+  margin-right: 15px;
+  position: relative;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.t-body .t-header .t-top-menu .t-menu > ul > li > ul {
+  position: absolute;
+  left: 0;
+}
+
+.t-body .t-header .t-top-menu .t-menu > ul > li ul {
+  display: none;
+  background-color: rgba(131, 126, 126, 0.9);
+  padding: 0;
+  line-height: normal;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+.t-body .t-header .t-top-menu .t-menu > ul > li li {
+  padding: 10px 20px;
+  min-width: 100px;
+  white-space: nowrap;
+}
+.t-body .t-header .t-top-menu .t-menu > ul > li > ul > li ul {
+  position: absolute;
+  margin-left: -webkit-calc(100% - 20px);
+  margin-left: -moz-calc(100% - 20px);
+  margin-left: calc(100% - 20px);
+  margin-top: -34px;
+}
+
+.t-body .t-header .t-top-menu .t-menu ul li:hover > ul {
+  display: block;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu .t-dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu .t-dropdown-content {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.t-body .t-dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #1EC5FD;
+}
+.t-body[data-theme=orange] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-top-menu .t-user-menu .t-dropdown-content a:hover {
+  color: #3d55a7;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu .t-dropdown-content a i {
+  margin-right: 5px;
+}
+
+.t-body .t-header .t-top-menu .t-user-menu .t-dropdown:hover .t-dropdown-content {
+  display: block;
+}
+
+.t-body .t-header .t-button {
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 4px;
+  color: white;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.t-body .t-header .t-login-button {
+  background: rgba(29, 197, 253, 1);
+  border: none;
+}
+.t-body[data-theme=orange] .t-header .t-login-button {
+  background:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-login-button {
+  background:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-login-button {
+  background: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-login-button {
+  background: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-login-button {
+  background: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-login-button {
+  background: #3d55a7;
+}
+
+.t-body .t-header .t-register-button {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.t-body .t-header .t-login-button span {
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.t-body .t-header .t-title .t-sub-title {
+  text-align: center;
+}
+
+.t-body .t-header .t-title .t-title-1 {
+  height: 34px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Comic Sans MS;
+  color: rgba(255, 167, 25, 1);
+}
+.t-body[data-theme=orange] .t-header .t-title .t-title-1 {
+  color:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-title .t-title-1 {
+  color:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-title .t-title-1 {
+  color: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-title .t-title-1 {
+  color: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-title .t-title-1 {
+  color: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-title .t-title-1 {
+  color: #3d55a7;
+}
+
+.t-body .t-header .t-title .t-title-2 {
+  height: 44px;
+  margin-top: 18px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Comic Sans MS;
+  color: rgba(32, 197, 253, 1);
+}
+.t-body[data-theme=orange] .t-header .t-title .t-title-2 {
+  color:#f58150;
+}
+.t-body[data-theme=red] .t-header .t-title .t-title-2 {
+  color:#FF3B25;
+}
+.t-body[data-theme=green] .t-header .t-title .t-title-2 {
+  color: #008000;
+}
+.t-body[data-theme=purple] .t-header .t-title .t-title-2 {
+  color: #800080;
+}
+.t-body[data-theme=blue_1] .t-header .t-title .t-title-2 {
+  color: #0e4abd;
+}
+.t-body[data-theme=blue_2] .t-header .t-title .t-title-2 {
+  color: #3d55a7;
+}
+
+.t-body .t-header .t-title .t-title-3 {
+  height: 23px;
+  margin-top: 66px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Microsoft YaHei;
+  color: rgba(255, 255, 255, 1);
+}
+
+.t-body .t-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.1;
+  background-color: rgba(49, 49, 49, 1);
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.template-lang {
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.t-lang-zh,.t-lang-en {
+  display: none;
+}
+
+.template-lang-zh .t-lang-zh {
+  display: block;
+}
+.template-lang-en .t-lang-en {
+  display: block;
+}
+
+ol, ul {
+  padding: revert;
+  margin: revert;
+  list-style: revert;
+}
